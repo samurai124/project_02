@@ -4,9 +4,11 @@ const prompt = require('prompt-sync')();
 function ascenseur(){
     let nomber = Number(prompt("Enter un étage :"));
     let nomber_mouvment ;
+    // verifer si le nombre est pair
     if(nomber % 2 == 0){
         nomber_mouvment = nomber / 2
     }
+    // si non
     else{
         nomber_mouvment=((nomber + 1)/2)+1
     }
